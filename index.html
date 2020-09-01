@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <title>02 inspector clouseau</title>
+</head>
+<body onresize="reDisplay()">
+    <header>
+        <style>
+            body {
+              background-image: url("image/header.jpg");
+            }
+            </style>
+        <h1>inspector clouse</h1>
+        <h2>this is chief inspector clouse speakig on the phone</h2>
+    </header> 
+    <main>
+        <h1>inspector clouseau</h1>
+        <h2>what i learned</h2>
+        <ul class="objectives">
+            <li>display window properties</li>
+            <li>display document properties</li>
+        </ul>
+        <h2>windows properties</h2>
+        <p id="myWindow"></p>
+        <p id="myWindow1"></p>
+        <p id="myWindow2"></p>
+
+        <h2>document properties</h2>
+        <p id="myDocument"></p>
+        <p id="myDocument1"></p>
+        <script>
+            document.getElementById("myWindow").innerHTML = "window size is " + window.innerHeight + " pixels heigh by " + window.innerWidth + " pixels wide ";
+            document.getElementById("myWindow1").innerHTML = "window offset is " + window.screenX + " from the left edge and " + window.screenY + " from the top of the display.";
+            document.getElementById("myWindow2").innerHTML = "Page location is " + window.location.href;
+            document.getElementById("myDocument").innerHTML = "title is " + document.title;
+            document.getElementById("myDocument1").innerHTML = "date last refreshed is " + Date();
+        </script>
+    </main>
+    <footer>
+        <p>assignment for dgm2760 by jonathon mullins</p>
+    </footer>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
